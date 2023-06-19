@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "module": "ES2020",
+        "skipLibCheck": true,
+
+        "moduleResolution": "node",
+        "rootDir": "./",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "types": ["vite", "node"],
+
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "resolveJsonModule": true,
+
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true
+    },
+    "include": ["src", "src/**/*.ts", "src/**/*.tsx"],
+    "exclude": [
+        "node_modules",
+        "./node_modules",
+        "./node_modules/*",
+        "./node_modules/@types/node/index.d.ts"
+    ],
+    "references": [{ "path": "./tsconfig.node.json" }]
+}
