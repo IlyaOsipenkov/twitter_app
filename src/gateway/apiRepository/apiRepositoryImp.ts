@@ -1,20 +1,15 @@
 import { ApiRepository } from "@/gateway/apiRepository/apiRepository";
 
 export class ApiRepositoryImp implements ApiRepository {
+    private baseApi = "https://shikimori.one";
     async getMainPageOnGoing(): Promise<unknown> {
-        // const response = await fetch("https://shikimori.one/api/animes/", {
-        //     method: "GET",
-        //     headers: new Headers(),
-        // });
-        // console.log(response);
-        // return response;
-
-        const base = "https://shikimori.one";
-        const cringe = await fetch(`${base}/api/animes`, {
+        const response = await fetch(`${this.baseApi}/api/animes`, {
             method: "GET",
             headers: new Headers(),
         });
-        console.log(cringe);
-        return cringe;
+        if (response.ok) {
+            return await response.json();
+        }
+        throw new Error("Problem with fetch");
     }
 }

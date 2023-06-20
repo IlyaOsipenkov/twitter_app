@@ -16,16 +16,4 @@ export default defineConfig({
             },
         ],
     },
-    server: {
-        https: false,
-        port: 5173,
-        proxy: {
-            "^/api": {
-                target: "https://shikimori.one/api",
-                changeOrigin: true,
-                secure: false,
-                rewrite: (proxyPath) => proxyPath.replace(/^\/api/, ""),
-            },
-        },
-    },
 });
