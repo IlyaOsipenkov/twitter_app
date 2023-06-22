@@ -1,3 +1,22 @@
-p {
-    color: red;
+.ongoing {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2px;
+    height: 232px;
+
+    .ongoing-movie {
+        img {
+            width: 133px;
+            height: 188px;
+        }
+
+        p:first-of-type {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 133px;
+            cursor: pointer;
+            color: #176093;
+        }
+    }
 }

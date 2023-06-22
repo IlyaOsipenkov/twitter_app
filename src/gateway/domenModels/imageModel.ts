@@ -12,8 +12,8 @@ export class ImageModel {
 
 export function toImageModel(imageApi: ImageApi): ImageModel {
     return new ImageModel({
-        original: imageApi.original,
-        preview: imageApi.preview,
+        original: `https://shikimori.me${imageApi.original}`,
+        preview: `https://shikimori.me${imageApi.preview}`,
         x96: imageApi.x96,
         x48: imageApi.x48,
     });

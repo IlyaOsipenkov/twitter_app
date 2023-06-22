@@ -9,8 +9,10 @@ import { Ongoing } from "./components/ongoing";
 function App() {
     const [count, setCount] = useState(0);
     return (
-        <div>
-            <Ongoing />
+        <div className="app-wrapper">
+            <div className="app">
+                <Ongoing />
+            </div>
         </div>
     );
 }

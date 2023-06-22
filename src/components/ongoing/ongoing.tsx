@@ -13,11 +13,17 @@ export const Ongoing = () => {
     useEffect(() => {
         getOngoings();
     }, []);
-
+    console.log(ongoings);
     return (
         <div className="ongoing">
             {ongoings.map((el) => {
-                return <p>{el.name}</p>;
+                return (
+                    <div className="ongoing-movie" key={el.id}>
+                        <img src={el.image.preview}></img>
+                        <p>{el.russian}</p>
+                        <p></p>
+                    </div>
+                );
             })}
         </div>
     );
