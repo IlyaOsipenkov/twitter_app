@@ -14,3 +14,16 @@ export interface OngoingApi {
     aired_on: string;
     released_on: null | string;
 }
+
+export interface Cringe extends OngoingApi {
+    cringe: string;
+}
+
+interface Todo {
+    title: string;
+    description: string;
+}
+
+function updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {
+    return { ...todo, ...fieldsToUpdate };
+}

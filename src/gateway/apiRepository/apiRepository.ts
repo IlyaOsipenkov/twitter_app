@@ -1,3 +1,5 @@
+import { OngoingModel } from "../domenModels/ongoingModel";
+
 export interface ApiRepository {
-    getMainPageOnGoing(): Promise<unknown>;
+    getMainPageOnGoing(): Promise<OngoingModel[]>;
 }
