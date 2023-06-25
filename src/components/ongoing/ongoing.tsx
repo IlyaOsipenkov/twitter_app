@@ -21,7 +21,7 @@ export const Ongoing = () => {
                     <div className="ongoing-movie" key={el.id}>
                         <img src={el.image.preview}></img>
                         <p>{el.russian}</p>
-                        <p></p>
+                        <p>{el.score}</p>
                     </div>
                 );
             })}

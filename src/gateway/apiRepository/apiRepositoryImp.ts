@@ -28,6 +28,7 @@ import { OngoingModel, toOngoingModels } from "../domenModels/ongoingModel";
 export class ApiRepositoryImp implements ApiRepository {
     async getMainPageOnGoing(): Promise<OngoingModel[]> {
         const http = new HttpClient();
+
         const response = await http.get<OngoingApi[]>(
             "animes?limit=8&status=ongoing&score=7&kind=tv&order=popularity"
         );

@@ -5,6 +5,7 @@ import "./App.css";
 import { ApiRepositoryImp } from "./gateway/apiRepository";
 import "./components/ongoing";
 import { Ongoing } from "./components/ongoing";
+import { Hashtags } from "./components/hashtags";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
         <div className="app-wrapper">
             <div className="app">
                 <Ongoing />
+                <Hashtags />
             </div>
         </div>
     );

@@ -5,7 +5,8 @@
 }
 
 .app-wrapper {
+    font-family: helvetica;
     width: 1170px;
-    background-color: red;
+    background-color: rgb(220, 225, 221);
     padding-top: 5px;
 }
