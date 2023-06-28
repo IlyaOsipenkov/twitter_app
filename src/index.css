@@ -1,12 +1,1 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.app-wrapper {
-    font-family: helvetica;
-    width: 1170px;
-    background-color: rgb(220, 225, 221);
-    padding-top: 5px;
-}
