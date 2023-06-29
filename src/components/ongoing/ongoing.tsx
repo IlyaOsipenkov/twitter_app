@@ -13,7 +13,6 @@ export const Ongoing = () => {
     useEffect(() => {
         getOngoings();
     }, []);
-    console.log(ongoings);
     return (
         <div className="ongoing">
             {ongoings.map((el) => {

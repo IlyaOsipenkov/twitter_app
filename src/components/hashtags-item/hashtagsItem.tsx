@@ -1,20 +1,24 @@
 import "@/components/hashtags-item/hashtagsitem.scss";
+import { HashtagObj } from "@/constans/hashtagsConstans";
 
-export const HashtagsItem = ({ props }) => {
-    const { type, id, color, hashtags } = props;
-    console.log(type);
+interface Props {
+    type: string;
+    hashtags: HashtagObj[];
+}
+export const HashtagsItem = (props: Props) => {
+    const { type, hashtags } = props;
     return (
         <div className={`hashtags-section ${type}`}>
             <div className="section--header">
                 <div className="vertical-delimiter"></div>
                 <h1>{type}</h1>
+                <div className="arrow"></div>
             </div>
             <div className="section--body">
-                {Object.keys(hashtags).map((el) => {
-                    const hashtag = hashtags[el].ru;
+                {hashtags.map((el) => {
                     return (
-                        <div className="hashtag">
-                            <p key={hashtag}>{hashtag}</p>
+                        <div key={el.ru} className="hashtag">
+                            <p key={el.ru}>{el.ru}</p>
                         </div>
                     );
                 })}

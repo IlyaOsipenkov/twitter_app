@@ -1,12 +1,16 @@
 export const hashtagsSections = ["animes", "manga", "ranobe"] as const;
 type HashtagsSections = (typeof hashtagsSections)[number];
 
+export type HashtagObj = {
+    ru: string;
+    eng: string;
+};
 export interface HashtagsMap {
     type: string;
     id: number;
     color: string;
     linkUrl: string;
-    hashtags: { ru: string; eng: string }[];
+    hashtags: HashtagObj[];
 }
 
 export type OuterHashtagsMap = {

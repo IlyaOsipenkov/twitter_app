@@ -7,6 +7,26 @@
         .vertical-delimiter {
             background-color: #fec2c5;
         }
+        .arrow {
+            position: absolute;
+            right: 10px;
+            top: 11px;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 7px solid #fc575e;
+        }
+    }
+
+    .section--body {
+        .hashtag {
+            background-color: #feedeb;
+            border: 1px solid #fee4e1;
+            p {
+                color: #fb414a;
+            }
+        }
     }
 }
 
@@ -18,6 +38,25 @@
         }
         .vertical-delimiter {
             background-color: #bce6ff;
+        }
+        .arrow {
+            position: absolute;
+            right: 10px;
+            top: 11px;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 7px solid #4bf;
+        }
+    }
+    .section--body {
+        .hashtag {
+            background-color: #ebfafe;
+            border: 1px solid #e1f8fe;
+            p {
+                color: #66c5e5;
+            }
         }
     }
 }
@@ -31,13 +70,32 @@
         .vertical-delimiter {
             background-color: #d7efc3;
         }
+        .arrow {
+            position: absolute;
+            right: 10px;
+            top: 11px;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 7px solid #74d61f;
+        }
+    }
+    .section--body {
+        .hashtag {
+            background-color: #f2feeb;
+            border: 1px solid #defdce;
+            p {
+                color: #6bc41c;
+            }
+        }
     }
 }
 
 .hashtags-section {
     .section--header {
         position: relative;
-        width: calc(33);
+        margin-bottom: 10px;
         .vertical-delimiter {
             position: absolute;
             height: 100%;
@@ -60,12 +118,9 @@
             padding: 5px 12px;
             // flex-grow: 1;
             // box-sizing: border-box;
-            background-color: red;
             margin: 5px 5px;
-            border: 3px solid;
+            width: fit-content;
             border-radius: 3px;
-            p {
-            }
         }
     }
 }
