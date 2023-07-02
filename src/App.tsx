@@ -17,6 +17,7 @@ function App() {
                 <HeaderOfSection sectionType={onAir} />
                 <Ongoing />
                 <Hashtags />
+                <HeaderOfSection sectionType={news} />
             </div>
         </div>
     );

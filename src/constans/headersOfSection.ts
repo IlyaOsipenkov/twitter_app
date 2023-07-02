@@ -6,10 +6,12 @@ export interface HeadersOfSection {
     moreNews: string;
 }
 
-export const headersOfSectionData = {
+export const headersOfSectionData: HeadersOfSection = {
     onAir: "СЕЙЧАС НА ЭКРАНАХ",
     news: "НОВОСТИ",
     content: "КОНТЕНТ",
     animeUpdate: "ОБНОВЛЕНИЯ АНИМЕ",
     moreNews: "ЕЩЁ НОВОСТИ",
 };
+
+// export const reverse
