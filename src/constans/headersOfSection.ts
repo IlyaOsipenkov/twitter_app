@@ -14,4 +14,18 @@ export const headersOfSectionData: HeadersOfSection = {
     moreNews: "ЕЩЁ НОВОСТИ",
 };
 
-// export const reverse
+export interface colorsOfHeadersOdSection {
+    onAirColor: string;
+    newsColor: string;
+    contentColor: string;
+    animeUpdateColor: string;
+    moreNewsColor: string;
+}
+
+export const colorsOfHeadersOdSectionData: colorsOfHeadersOdSection = {
+    onAirColor: "#000000",
+    newsColor: "#FFA500",
+    contentColor: "#89CFF0",
+    animeUpdateColor: "#EF5DFF",
+    moreNewsColor: "#89CFF0",
+};
